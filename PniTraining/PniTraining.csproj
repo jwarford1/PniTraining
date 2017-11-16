@@ -64,12 +64,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DriverManager.cs" />
     <Compile Include="LoginSteps.cs" />
     <Compile Include="pageGoogleSearch.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>pageGoogleSearch.feature</DependentUpon>
     </Compile>
+    <Compile Include="PageObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
