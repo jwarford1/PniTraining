@@ -17,5 +17,6 @@ C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\PniTraining\
 C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\PniTraining\bin\Debug\nunit.framework.xml
 C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\PniTraining\bin\Debug\WebDriver.xml
 C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\PniTraining\bin\Debug\WebDriver.Support.xml
+C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\PniTraining\obj\Debug\PniTraining.csprojResolveAssemblyReference.cache
 C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\PniTraining\obj\Debug\PniTraining.dll
 C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\PniTraining\obj\Debug\PniTraining.pdb

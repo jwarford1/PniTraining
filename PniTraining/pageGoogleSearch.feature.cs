@@ -74,23 +74,13 @@ namespace PniTraining
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
-  testRunner.Given("I am at the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "field",
-                        "value"});
-            table1.AddRow(new string[] {
-                        "Username",
-                        "xtrumanx"});
-            table1.AddRow(new string[] {
-                        "Password",
-                        "P@55w0Rd"});
+  testRunner.Given("I am at the search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
-  testRunner.When("I fill in the following form", ((string)(null)), table1, "When ");
-#line 13
-  testRunner.And("I click the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 14
-  testRunner.Then("I should be at the home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+  testRunner.When("I use the keyword <testing>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 10
+  testRunner.And("I click the search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
+  testRunner.Then("I should be at the results page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

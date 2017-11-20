@@ -8,21 +8,25 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace PniTraining
 {
-    public class PageObject
+    public class PageObject : DriverManager
     {
         [FindsBy(How = How.Id, Using = "lst-ib")]
         public IWebElement seachBox;
 
-        private static  IWebDriver driver;
-
-        public static PageObject  NavigateTo(IWebDriver webDriver, string url)
+        public PageObject(IWebDriver webDriver, string url) : base(webDriver, url)
         {
-            driver = webDriver;
-            driver.Navigate().GoToUrl(url);
-            var searchPage = new PageObject();
-            PageFactory.InitElements(driver, searchPage);
-            return searchPage;
+            
         }
+        //private static  IWebDriver driver;
+
+        //public static PageObject  NavigateTo(IWebDriver webDriver, string url)
+        //{
+        //    driver = webDriver;
+        //    driver.Navigate().GoToUrl(url);
+        //    var searchPage = new PageObject();
+        //    PageFactory.InitElements(driver, searchPage);
+        //    return searchPage;
+        //}
         public void setSearchField(string searchKeyword)
         {
             seachBox.Clear();

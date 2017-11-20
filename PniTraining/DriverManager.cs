@@ -10,15 +10,15 @@ namespace PniTraining
 {
     public  class DriverManager
     {
-        private static IWebDriver driver;
+        private IWebDriver driver;
 
-        //public static IWebDriver NavigateTo(IWebDriver webDriver)
-        //{
-        //    driver = webDriver;
-        //    driver.Navigate().GoToUrl("https://www.google.com/");
-        //    //var searchPage = new DriverManager();
-        //    PageFactory.InitElements(driver, this);
-        //    return searchPage;
-        //}
+        public DriverManager(IWebDriver webDriver, string url)
+        {
+            driver = webDriver;
+            driver.Navigate().GoToUrl(url);
+            //var searchPage = new DriverManager();
+            PageFactory.InitElements(driver, this);
+            
+        }
     }
 }

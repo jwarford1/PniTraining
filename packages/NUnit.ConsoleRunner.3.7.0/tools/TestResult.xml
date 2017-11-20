@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-run id="2" testcasecount="1" result="Passed" total="1" passed="0" failed="0" inconclusive="1" skipped="0" asserts="0" engine-version="3.7.0.0" clr-version="4.0.30319.42000" start-time="2017-11-19 07:15:39Z" end-time="2017-11-19 07:15:46Z" duration="6.814911">
+  <command-line><![CDATA[nunit3-console  "C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\PniTraining\bin\Debug\PniTraining.dll"]]></command-line>
+  <test-suite type="Assembly" id="0-1002" name="PniTraining.dll" fullname="C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\PniTraining\bin\Debug\PniTraining.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-11-19 07:15:40Z" end-time="2017-11-19 07:15:46Z" duration="5.433040" total="1" passed="0" failed="0" warnings="0" inconclusive="1" skipped="0" asserts="0">
+    <environment framework-version="3.9.0.0" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 10.0.14393.0" platform="Win32NT" cwd="C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\packages\NUnit.ConsoleRunner.3.7.0\tools" machine-name="JOHNTEST" user="jwarford" user-domain="JOHNTEST" culture="en-US" uiculture="en-US" os-architecture="x64" />
+    <settings>
+      <setting name="DisposeRunners" value="True" />
+      <setting name="WorkDirectory" value="C:\Users\jwarford\Documents\Visual Studio 2017\Projects\PniTraining\packages\NUnit.ConsoleRunner.3.7.0\tools" />
+      <setting name="ImageRuntimeVersion" value="4.0.30319" />
+      <setting name="ImageTargetFrameworkName" value=".NETFramework,Version=v4.5.2" />
+      <setting name="ImageRequiresX86" value="False" />
+      <setting name="ImageRequiresDefaultAppDomainAssemblyResolver" value="False" />
+      <setting name="NumberOfTestWorkers" value="2" />
+    </settings>
+    <properties>
+      <property name="_PID" value="3408" />
+      <property name="_APPDOMAIN" value="domain-" />
+    </properties>
+    <test-suite type="TestSuite" id="0-1003" name="PniTraining" fullname="PniTraining" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-11-19 07:15:40Z" end-time="2017-11-19 07:15:46Z" duration="5.402989" total="1" passed="0" failed="0" warnings="0" inconclusive="1" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="0-1000" name="LoginFeature" fullname="PniTraining.LoginFeature" classname="PniTraining.LoginFeature" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-11-19 07:15:40Z" end-time="2017-11-19 07:15:46Z" duration="5.395118" total="1" passed="0" failed="0" warnings="0" inconclusive="1" skipped="0" asserts="0">
+        <properties>
+          <property name="Description" value="Login" />
+        </properties>
+        <output><![CDATA[-> Using app.config
+]]></output>
+        <test-case id="0-1001" name="LoggingInWithValidCredentials" fullname="PniTraining.LoginFeature.LoggingInWithValidCredentials" methodname="LoggingInWithValidCredentials" classname="PniTraining.LoginFeature" runstate="Runnable" seed="278725427" result="Inconclusive" start-time="2017-11-19 07:15:41Z" end-time="2017-11-19 07:15:46Z" duration="4.871188" asserts="0">
+          <properties>
+            <property name="Description" value="Logging in with valid credentials" />
+            <property name="Category" value="scenarioSearchByKeyword" />
+          </properties>
+          <reason>
+            <message><![CDATA[One or more step definitions are not implemented yet.
+  LoginSteps.WhenIFillInTheFollowingForm(<table>)]]></message>
+          </reason>
+          <output><![CDATA[Given I am at the login page
+-> done: LoginSteps.GivenIAmAtTheLoginPage() (0.6s)
+When I fill in the following form
+  --- table step argument ---
+  | field    | value    |
+  | Username | xtrumanx |
+  | Password | P@55w0Rd |
+-> pending: LoginSteps.WhenIFillInTheFollowingForm(<table>)
+And I click the login button
+-> skipped because of previous errors
+Then I should be at the home page
+-> skipped because of previous errors
+]]></output>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

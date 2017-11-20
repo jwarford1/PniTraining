@@ -1,52 +1,49 @@
 ﻿using System;
-using TechTalk.SpecFlow;
-using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using TechTalk.SpecFlow;
 
 namespace PniTraining
 {
     [Binding]
     public class LoginSteps
     {
-        private IWebDriver initialDriver;
-        private PageObject searchPage;
-        
+        private PageObject seachPage;
+        private IWebDriver driver;
 
         [BeforeScenario()]
         public void Setup()
         {
-            
-            initialDriver = new ChromeDriver();
+            driver = new ChromeDriver();
             
         }
 
         [AfterScenario()]
         public void TearDown()
         {
-           initialDriver.Quit();
+            driver.Quit();
         }
 
-        [Given(@"I am at the login page")]
-        public void GivenIAmAtTheLoginPage()
+        [Given(@"I am at the search page")]
+        public void GivenIAmAtTheSearchPage()
         {
-            searchPage = PageObject.NavigateTo(initialDriver, "https://www.google.com/");
+            seachPage = new PageObject(driver, "https://www.google.com/");
         }
         
-        [When(@"I fill in the following form")]
-        public void WhenIFillInTheFollowingForm(Table table)
-        {
-            ScenarioContext.Current.Pending();
-        }
-        
-        [When(@"I click the login button")]
-        public void WhenIClickTheLoginButton()
+        [When(@"I use the keyword (.*)")]
+        public void WhenIUseTheKeyword(string keyword)
         {
             ScenarioContext.Current.Pending();
         }
         
-        [Then(@"I should be at the home page")]
-        public void ThenIShouldBeAtTheHomePage()
+        [When(@"I click the search button")]
+        public void WhenIClickTheSearchButton()
+        {
+            ScenarioContext.Current.Pending();
+        }
+        
+        [Then(@"I should be at the results page")]
+        public void ThenIShouldBeAtTheResultsPage()
         {
             ScenarioContext.Current.Pending();
         }
