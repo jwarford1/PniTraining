@@ -76,7 +76,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 8
   testRunner.Given("I am at the search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
-  testRunner.When("I use the keyword <testing>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+  testRunner.When("I use the keyword testing", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
   testRunner.And("I click the search button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 11

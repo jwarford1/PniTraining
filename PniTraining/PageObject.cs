@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
+
 namespace PniTraining
 {
     public class PageObject : DriverManager
@@ -13,20 +14,19 @@ namespace PniTraining
         [FindsBy(How = How.Id, Using = "lst-ib")]
         public IWebElement seachBox;
 
+        [FindsBy(How = How.Name, Using = "btnK")]
+        public IWebElement clickSearchBox;
+
         public PageObject(IWebDriver webDriver, string url) : base(webDriver, url)
         {
             
         }
-        //private static  IWebDriver driver;
 
-        //public static PageObject  NavigateTo(IWebDriver webDriver, string url)
-        //{
-        //    driver = webDriver;
-        //    driver.Navigate().GoToUrl(url);
-        //    var searchPage = new PageObject();
-        //    PageFactory.InitElements(driver, searchPage);
-        //    return searchPage;
-        //}
+        public void enterSearch()
+        {
+            seachBox.SendKeys(Keys.Enter);
+        }
+
         public void setSearchField(string searchKeyword)
         {
             seachBox.Clear();

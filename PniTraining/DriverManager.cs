@@ -20,5 +20,10 @@ namespace PniTraining
             PageFactory.InitElements(driver, this);
             
         }
+
+        public string getTitle()
+        {
+            return driver.Title;
+        }
     }
 }

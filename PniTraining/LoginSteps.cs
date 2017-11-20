@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
+using NUnit.Framework;
 
 namespace PniTraining
 {
@@ -33,19 +34,21 @@ namespace PniTraining
         [When(@"I use the keyword (.*)")]
         public void WhenIUseTheKeyword(string keyword)
         {
-            ScenarioContext.Current.Pending();
+            seachPage.setSearchField(keyword);
         }
         
         [When(@"I click the search button")]
         public void WhenIClickTheSearchButton()
         {
-            ScenarioContext.Current.Pending();
+            seachPage.enterSearch();
         }
         
         [Then(@"I should be at the results page")]
         public void ThenIShouldBeAtTheResultsPage()
         {
-            ScenarioContext.Current.Pending();
+            string titleText = seachPage.getTitle();
+        
+            Assert.AreEqual(titleText, "testing - Google Search");
         }
     }
 }
